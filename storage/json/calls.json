@@ -1,0 +1,31 @@
+[
+    {
+        "id": 1,
+        "name": "Fauzan",
+        "avatarPath": "https://api.adorable.io/avatars/285/abott@adorable.png",
+        "calls": [
+            {
+                "isIncoming": true,
+                "isMissed": true,
+                "timestamp": "2019-04-16T18:42:49.608466Z"
+            },
+            {
+                "isIncoming": true,
+                "isMissed": false,
+                "timestamp": "2019-04-16T18:42:49.608466Z"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Cindy",
+        "avatarPath": "https://api.adorable.io/avatars/285/abott@adorable.png",
+        "calls": [
+            {
+                "isIncoming": false,
+                "isMissed": false,
+                "timestamp": "2019-04-16T18:42:49.608466Z"
+            }
+        ]
+    }
+]

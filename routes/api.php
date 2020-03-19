@@ -29,3 +29,36 @@ Route::namespace('Dribbble')->group(function () {
         });
     });
 });
+
+Route::namespace('WhatsApp')->group(function () {
+    Route::prefix('chats')->group(function () {
+
+        // GET /chats
+        Route::get('/', 'ChatController@index');
+    
+        // GET /chats/:id
+        Route::get('/{id}', 'ChatController@show')
+        ->where('id', '[0-9]+');
+    
+        // POST /chats/:id
+        Route::post('/{id}', 'ChatController@store')
+        ->where('id', '[0-9]+');
+    });
+
+    Route::prefix('statuses')->group(function () {
+
+        // GET /statuses
+        Route::get('/', 'StatusController@index');
+    
+        // GET /statuses/:id
+        Route::get('/{id}', 'StatusController@show')
+        ->where('id', '[0-9]+');
+    });
+
+    Route::prefix('calls')->group(function () {
+
+        // GET /calls
+        Route::get('/', 'CallController@index');
+
+    });
+});
